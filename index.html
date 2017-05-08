@@ -9,20 +9,23 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-
         <a-scene>
             <a-assets>
-                <img id="beach" src="images/conchal2017.jpg">
+                <img id="beach-bg" src="images/conchal2017.jpg">
                 <img id="sand" src="images/sand.jpg">
                 <a-asset-item id="castle-obj" src="models/castle.obj"></a-asset-item>
                 <a-asset-item id="castle-mtl" src="models/castle.mtl"></a-asset-item>
+                <video id="playa" autoplay loop="true" src="video/playa.mp4">
+                <img id="logo" src="images/logo.png">
             </a-assets>
-            <a-sky src="#beach"></a-sky>
+            <a-sky src="#beach-bg"></a-sky>
             <a-obj-model src="#castle-obj" mtl="#castle-mtl"></a-obj-model>
             <a-entity position="0 0 0" particle-system="preset: dust" opacity=".5"></a-entity>
             <a-plane ></a-plane>
             <a-sound src="audio/waves.wav" autoplay="true" position="0 0 3" loop="true"></a-sound>
             <a-camera position="0 1 0"></a-camera>
+            <a-image src="#my-image" position="0 2 -5"></a-image>
+            <!--<a-videosphere src="#playa"></a-videosphere>-->
         </a-scene>
     
     </body>
