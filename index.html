@@ -15,14 +15,16 @@
                 <img id="sand" src="images/sand.jpg">
                 <a-asset-item id="castle-obj" src="models/castle.obj"></a-asset-item>
                 <a-asset-item id="castle-mtl" src="models/castle.mtl"></a-asset-item>
-                <a-asset-item id="dori-obj" src="models/dori.obj"></a-asset-item>
+                <a-asset-item id="fish-obj" src="models/fish.obj"></a-asset-item>
                 <a-asset-item id="dori-mtl" src="models/dori.mtl"></a-asset-item>
+                <a-asset-item id="nemo-mtl" src="models/nemo.mtl"></a-asset-item>
                 <video id="playa" autoplay loop="true" src="video/playa.mp4">
                 <img id="logo" src="images/logo.png">
             </a-assets>
             <a-sky src="#beach-bg"></a-sky>
             <a-obj-model src="#castle-obj" mtl="#castle-mtl"></a-obj-model>
-            <a-obj-model src="#dori-obj" mtl="#dori-mtl" position="0 3 6"></a-obj-model>
+            <a-obj-model src="#fish-obj" mtl="#dori-mtl" position="0 3 6"></a-obj-model>
+            <a-obj-model src="#fish-obj" mtl="#nemo-mtl" position="3 3 6"></a-obj-model>
             <a-entity position="0 0 0" particle-system="preset: dust" opacity=".5"></a-entity>
             <a-plane height="100" width="100" rotation="-90 0 0" visible="false"></a-plane>
             <a-sound src="audio/waves.wav" autoplay="true" position="0 0 3" loop="true"></a-sound>
