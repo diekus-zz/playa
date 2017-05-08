@@ -4,6 +4,7 @@
         <title></title>
         <meta charset="UTF-8">
         <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+        <script src="js/aframe-particle-system-component.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -18,6 +19,7 @@
             </a-assets>
             <a-sky src="#beach"></a-sky>
             <a-obj-model src="#castle-obj" mtl="#castle-mtl"></a-obj-model>
+            <a-entity position="0 0 0" particle-system="preset: dust" opacity=".5"></a-entity>
             <a-plane ></a-plane>
             <a-sound src="audio/waves.wav" autoplay="true" position="0 0 3" loop="true"></a-sound>
             <a-camera position="0 1 0"></a-camera>
